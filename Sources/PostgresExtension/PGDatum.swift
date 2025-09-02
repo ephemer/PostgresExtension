@@ -7,6 +7,8 @@ public struct PGDatum: Sendable {
         self.rawDatum = rawDatum
     }
 
+    public static let void: PGDatum = PGDatum(0)
+
     public var int64: Int64 { Int64(DatumGetInt64(rawDatum)) }
     public var uint64: UInt64 { UInt64(DatumGetUInt64(rawDatum)) }
     
