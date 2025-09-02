@@ -1,0 +1,4 @@
+module CPostgres [system] {
+  header "CPostgres.h"
+  export *
+}
